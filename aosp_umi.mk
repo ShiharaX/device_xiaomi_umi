@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 Project 404
+# Copyright (C) 2020 The PixelExperience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-# Include 404 common configuration
+# Include PixelExperience common configuration
 TARGET_BOOT_ANIMATION_RES := 1080
 
 TARGET_GAPPS_ARCH := arm64
@@ -22,14 +22,11 @@ TARGET_GAPPS_ARCH := arm64
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/umi/kona.mk)
 
-# Inherit common 404 configuration
-$(call inherit-product, vendor/404/configs/common.mk)
-
-$(call inherit-product, vendor/google/pixel/config.mk)
-$(call inherit-product, vendor/google/gms/gapps.mk)
+# Inherit common PE configuration
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Override build properties
-PRODUCT_NAME := p404_umi
+PRODUCT_NAME := aosp_umi
 PRODUCT_DEVICE := umi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 10
