@@ -20,14 +20,13 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Mi 10
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DISC="coral-user 11 RP1A.201005.004 6782484 release-keys" \
-    PRODUCT_DEVICE=umi \
-    PRODUCT_NAME=umi
+    PRIVATE_BUILD_DISC="coral-user 11 RQ1A.201205.008 6943376 release-keys"
 
-BUILD_FINGERPRINT := google/coral/coral:11/RP1A.201005.004/6782484:user/release-keys
+BUILD_FINGERPRINT := "google/coral/coral:11/RQ1A.201205.008/6943376:user/release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
+
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+    
