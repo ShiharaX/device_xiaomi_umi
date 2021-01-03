@@ -84,6 +84,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_audio@2.0 \
     vendor.qti.hardware.btconfigstore@1.0 \
     vendor.qti.hardware.btconfigstore@2.0
+    
+# Camera
+PRODUCT_PACKAGES += \
+    OpenCamera
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/net.sourceforge.opencamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/net.sourceforge.opencamera.xml
 
 # Configstore
 PRODUCT_PACKAGES += \
