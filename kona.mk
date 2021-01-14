@@ -105,8 +105,11 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/vendor.lineage.biometrics.fingerprint.inscreen.xml:system/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+
 PRODUCT_PACKAGES += \
-    lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_kona
+    lineage.biometrics.fingerprint.inscreen@1.0-service.kona
 
 # Fstab
 PRODUCT_COPY_FILES += \
