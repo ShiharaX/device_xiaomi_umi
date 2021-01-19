@@ -22,4 +22,10 @@
 
     <!-- Bottom margin size when fingerprint in display is active -->
     <dimen name="keyguard_indication_margin_bottom">30dp</dimen>
+    
+    <!-- the padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">6dp</dimen>
+    
+     <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">0dp</dimen>
 </resources>
