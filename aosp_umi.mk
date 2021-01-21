@@ -14,21 +14,23 @@
 # limitations under the License.
 #
 
+# Include PixelExperience common configuration
+TARGET_BOOT_ANIMATION_RES := 1080
+
+TARGET_GAPPS_ARCH := arm64
+
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/umi/kona.mk)
 
-# Inherit some common Arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit common PE configuration
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_umi
+PRODUCT_NAME := aosp_umi
 PRODUCT_DEVICE := umi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 10
 PRODUCT_MANUFACTURER := Xiaomi
-DEVICE_MAINTAINER := ChaptSand
-
-PRODUCT_CHARACTERISTICS := nosdcard
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DISC="coral-user 11 RQ1A.210105.003 7005429 release-keys"
